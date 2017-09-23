@@ -187,6 +187,7 @@ void ethash_cuda_miner::listDevices()
 			outString += "[" + to_string(i) + "] " + string(props.name) + "\n";
 			outString += "\tCompute version: " + to_string(props.major) + "." + to_string(props.minor) + "\n";
 			outString += "\tcudaDeviceProp::totalGlobalMem: " + to_string(props.totalGlobalMem) + "\n";
+			outString += "\tcudaDeviceProp::pciDeviceID: " + to_string(props.pciDeviceID) + "\n";
 		}
 		std::cout << outString;
 	}
